@@ -1,0 +1,17 @@
+{
+  "name": "autocomplete-address",
+  "description": "",
+  "main": "dist/autocomplete.min.js",
+  "authors": [
+    "João Carvalho <oi@joaocarvalhowd.com.br>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/joaocarvalhowd/autocomplete-address",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
