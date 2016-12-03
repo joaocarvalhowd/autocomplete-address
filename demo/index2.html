@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo 2</title>
+</head>
+<body>
+
+    <div>
+        <label>CEP:</label>
+        <input type="text" id="zipcode1">
+        <button type="button" id="search-address">Search</button>
+    </div>
+
+    <div>
+        <label>RUA:</label>
+        <input type="text" id="street1">
+    </div>
+
+    <div>
+        <label>BAIRRO</label>
+        <input type="text" id="neighborhood1">
+    </div>
+
+    <div>
+        <label>ESTADO</label>
+        <input type="text" id="state1">
+    </div>
+
+    <div>
+        <label>CIDADE</label>
+        <input type="text" id="city1">
+    </div>
+
+    <script src="../dist/autocomplete-address.min.js"></script>
+
+    <script>
+
+        var options = {
+            fields: {
+                zipcode: {
+                    name: 'zipcode1',
+                    attr: 'id'
+                },
+                street: {
+                    name: 'street1',
+                    attr: 'id'
+                },
+                neighborhood: {
+                    name: 'neighborhood1',
+                    attr: 'id'
+                },
+                state: {
+                    name: 'state1',
+                    attr: 'id'
+                },
+                city: {
+                    name: 'city1',
+                    attr: 'id'
+                }
+            },
+            events: [],
+            listenBtn: true,
+            listenBtnId: 'search-address'
+        };
+
+        new AutocompleteAddress(options);
+    </script>
+
+</body>
+</html>
